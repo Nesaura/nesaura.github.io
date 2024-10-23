@@ -1,0 +1,30 @@
+body{
+    background: linear-gradient(#101010, #202020);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.links{
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    color: #60e7ff;
+}
+
+a:visited{
+    color: #60ffc2;
+}
