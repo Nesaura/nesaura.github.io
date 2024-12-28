@@ -5,11 +5,20 @@ body{
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    background-image: url(assets/images/image.png);
 }
 
 h1{
     text-align: center;
     margin-top: 50px;
+}
+
+.title{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
 }
 
 .subtitle{
@@ -32,7 +41,7 @@ a:visited{
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #202020;
     padding: 20px;
@@ -43,19 +52,37 @@ a:visited{
     margin: 0px;
 }
 
-.navbarlinks ul li{
+.logo{
     display: inline;
-    margin-right: 20px;
 }
 
-.navbarlinks a{
-    text-decoration: none;
+.dropdown button{
+    background-color: #797979;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }
 
-.navbarlinks a:hover{
-    background-color: #525252;
-    border-radius: 10px;
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .contentdrop{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 35%);
+    min-width: 100px;
+}
+
+.dropdown:hover .contentdrop{
+    display: block;
+}
+
+.dropdown a:hover{
+    background-color: #797979;
     transition: 0.2s;
 }
