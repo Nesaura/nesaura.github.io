@@ -1,36 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Nesaura</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Nesaura</h1>
-        </div>
-        <div class="dropdown">
-            <button>Nouvelle Terre</button>
-            <div class="contentdrop">
-                <a href="https://nesaura.github.io/Nouvelle-Terre/">Home page</a>
-                <a href="https://nesaura.github.io/Nouvelle-Terre/Chronicles.html">Chronicles</a>
-                <a href="https://nesaura.github.io/Nouvelle-Terre/assets/Immersion/Although/Archive.html">Orange Inc Digital Archive</a>
+    <div class="container">
+        <div class="nav">
+            <div class="middlecontainer">
+                <header>
+                    <h1 class="slide-in-top-left">
+                        Nesaura<span>.</span>
+                    </h1>
+                    <div class="menu-button slide-in-top-right" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </header>
+                <nav class="navbar">
+                    <div id="menu" class="menu">
+                        <div class="menu-content slide-in-top-right">
+                            <ul>
+                                <li>
+                                    <a href="https://nesaura.github.io/Nouvelle-Terre/">Nouvelle Terre</a>
+                                </li>
+                                <li>
+                                    <a href="https://nesaura.github.io/magic/">MAGIC</a>
+                                </li>
+                                <li>
+                                    <a href="#aboutus">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Credits</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-
-        <div class="dropdown">
-            <button>MAGIC</button>
-            <div class="contentdrop">
-                <a href="https://nesaura.github.io/magic/">Home</a>
-                <a href="https://nesaura.github.io/magic/about.html">About</a>
+        <img src="assets/images/The Earth.png">
+        <div class="content">
+            <div class="middlecontainer">
+                <div class="center-text">
+                    <h1>Insert some title text.</h1>
+                    <p>Sorry, we've got no idea what to say right now.</p>
+                    <a href="#" class="learn-more">Coming Soon!</a>
+                </div>
             </div>
         </div>
-    </nav>
-    
-    <div class="title">
-        <h1>COMING SOON.</h1>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
